@@ -66,5 +66,5 @@ console.log(`오늘 ${movie_theater.name}좌석 ${movie_theater.pst_line},${movi
 const yoil = ['월','화','수','목','금','토','일']
 console.log(yoil); //test
 console.log(yoil[2]); //배열변수명[호출인덱스번호]
-console.log(`오늘은 ${yoil[2]}요일 입니다.`);
+console.log(`오늘은 ${yoil[2]}요일 입니다.`); 
 console.log(`내일은 ${yoil[2+1]}요일 입니다.`); 
