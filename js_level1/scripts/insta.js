@@ -25,10 +25,18 @@ function likeOn(){
 // 5. 좋아요 하트아이콘을 누르면 좋아요 수가 오르고 색이 변경된다.(o) 다시 선택시 헤제 반복 (x-조건문공부필요)
 // 이미지 더블클릭 하기 전 기준
 // 위 likeImg 변수 활용(추가 변수 X)
-likeImg.addEventListener('click',likeImgOn);
-function likeImgOn(){
-    return console.log(likeImg.src="./images/icons/like_on.png");
-}
+//likeImg.addEventListener('click',likeOn);
+//(위)likeImg 클릭시 실행되는 콜백함수
+//(아래) likeImg.객체가 a태그로 클릭 시 새로고침되서 스크롤이 위로 올라가는 문제해결을 위한 방법
+//콜백함수 호툴이 아닌 익명함수 또는 화살표함수 이용필수
+//익명함수 또는 화살표함수로 작성 시 이벤트 앞 객정보가 함수의 매겨변수로 자동으로 대입된다.
+//위 매개변수가 받은 정보를 확인하려면 매개변수에 변수명(e)을 작성하고 console.log()로 확인할 수 있다.
+likeImg.addEventListener('click',function(e){
+    //console.log(e);
+    e.preventDefault();//태그의 동적 기능 취소(a태그의새로고침)
+    likeOn(); // 익명함수 안에서 호출하기에 ()를 붙여야한다.
+});
+
 
 // 6. 댓글 아이콘을 누르면 댓글 입력창이 실행되고(o)-제작필요, 실행화면에서 바깥쪽 영역 터치시 입력창 닫힘(o)
 // 7. 공유인 비행기 아이콘을 누르면 하단에서 공유가능 계정 표시된 창 실행(o)-제작필요,바깥쪽 영역 터치시 닫힘(o)
