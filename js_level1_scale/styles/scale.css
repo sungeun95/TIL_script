@@ -4,13 +4,10 @@ main {
     text-align: center;
 }
 main h1{
-    font-size: 1.5rem; font-weight: 600;
+    font-size: 2rem; font-weight: 800;
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 20px; 
-    border-radius: 20px; 
-    color: #fff;
-    background-color: #fc8804;}
+    color:#fc8804;}
 
 main p{
     margin-bottom: 20px;
@@ -33,5 +30,20 @@ main #resulr_btn{
     width: 100%;
     padding: 30px;
     border-radius: 20px;
+    /* transition: background-color 0.5s ; */
 }
-main #result {}
+main #resulr_btn:hover{
+   /*  background-color: #ffc400;  */
+}
+main #result {
+    margin-top: 5px; 
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 15px 10px;
+    background-color: #f00;
+    border-radius: 20px;
+}
+/* 자바스크립트에서 동적으로 생성한 HTML 꾸미기 속성 */
+main #result em{color: rgb(104, 0, 0); font-weight: 700;}
