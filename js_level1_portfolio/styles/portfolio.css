@@ -12,7 +12,6 @@ main .design{
     grid-template-columns: 335px 335px 335px 335px;
     grid-template-rows: 200px 200px 200px;  */
 }
-
     /*  gap: 20px; */
     main .design a{
     width: calc((100% - 60px) / 4); 
