@@ -1,4 +1,5 @@
 /* ------------index.css */
+body, html{scroll-behavior: smooth;}
 main {
     background-color: aqua;
     width: 995px; margin: 0 auto;
@@ -74,6 +75,19 @@ main section .right_order .product_option select[name=color]{
 main section .right_order .product_option select[name=color] option{}
 main section .right_order .product_option select[name=size]{}
 main section .right_order .product_option select[name=size] option{}
+
+/* JS에서 select클릭 시 출력되는 영역 CSS */
+main .right_order .order_select{
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+main .right_order .order_select .list {font-size: 0.8rem;}
+/* JS에서 select클릭 시 출력되는 영역 */
+
 main section .right_order .total{
     display:flex; justify-content: space-between;
 }
@@ -98,3 +112,7 @@ main section .right_order .btn_group #cart_btn{
 main section .right_order .btn_group #buy_btn{
     background-color: #59AFFF; color: #fff;
 }
+main .info{height: 100vh;}
+main #review{height: 100vh; background-color: orange;}
+main .board{height: 100vh;}
+
