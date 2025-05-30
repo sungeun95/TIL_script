@@ -54,9 +54,11 @@ const month = document.querySelector('input[name=month]');
 const resulrBtn = document.querySelector('#resulr_btn');
 const result = document.querySelector('#result');
 console.log(month,resulrBtn,result);
+result.style.display = 'none'; 
 
 resulrBtn.addEventListener('click',bFlower);
 function bFlower(){
     //let flower = (++month.value);
+    result.style.display = 'block'; 
     result.textContent= `${month.value}월의 탄생화는 ${birthday_flower[month.value-1].flower}, 꽃말은 ${birthday_flower[month.value-1].content}입니다. `
 }
