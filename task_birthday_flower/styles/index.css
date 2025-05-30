@@ -1,0 +1,23 @@
+main{}
+main .box{
+    width: 340px; 
+    margin: 0 auto; 
+    padding: 30px;
+    text-align: center;
+    background-color: aqua;
+}
+main .box h1{}
+main .box p{}
+main .box .birthday{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+main .box .birthday li{margin-right: 10px;}
+main .box .birthday li:last-child{margin-right: 0;}
+main .box .birthday li input{}
+main .box .birthday li input[type*=er]{
+    width: 30px; border-radius: 5px;
+} /* 통합 */
+main .box #resulr_btn{} 
+main .box #result{} 

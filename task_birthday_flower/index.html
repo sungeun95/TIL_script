@@ -10,16 +10,17 @@
 </head>
 <body>
     <main>
-        <h1>탄생화 꽃말</h1>
-        <p>Q. 당신의 생일은 몇월인가요?</p>
-        <ul class="info">
-            <li>
-                <span>년</span>
-                <input type="number" name="user_height" value="0">
-            </li>
-        </ul>
-        <button type="button" id="resulr_btn">결과보기</button>
-        <p id="result"><!-- 결과출력위치 --></p>
+        <div class="box">
+            <h1>탄생화 꽃말</h1>
+            <p>Q. 당신의 생일은 몇월인가요?</p>
+            <ul class="birthday">
+                <li><input type="number" name="year" value=""><span>년</span></li>
+                <li><input type="number" name="month" value=""><span>월</span></li>
+                <li><input type="number" name="day" value=""><span>일</span></li>
+            </ul>
+            <button type="button" id="resulr_btn">탄생화와 꽃말은?</button>
+            <p id="result"><!-- 결과출력위치 --></p>
+        </div>
     </main>
 </body>
 </html>
