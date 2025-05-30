@@ -81,11 +81,29 @@ main .right_order .order_select{
     background-color: #ccc;
     border-radius: 5px;
     padding: 10px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    overflow: hidden;
 }
-main .right_order .order_select .list {font-size: 0.8rem;}
+main .right_order .order_select .list {
+    font-size: 0.8rem;
+    float: left;
+    margin-bottom: 30px;
+}
+main .right_order .order_select .close {
+    font-size: 0.8rem;
+    float: right; 
+}
+main .right_order .order_select .order_num {
+    font-size: 0.8rem;
+    float: left; clear:both;
+}
+main .right_order .order_select .price {
+    font-size: 1.2rem;
+    font-weight: 800;
+    float: right;
+}
+main .right_order .order_select .price em{
+    font-weight: 800;
+}
 /* JS에서 select클릭 시 출력되는 영역 */
 
 main section .right_order .total{
