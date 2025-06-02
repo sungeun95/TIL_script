@@ -54,11 +54,18 @@ const month = document.querySelector('input[name=month]');
 const resulrBtn = document.querySelector('#resulr_btn');
 const result = document.querySelector('#result');
 console.log(month,resulrBtn,result);
-result.style.display = 'none'; 
+
+result.style.display = 'none'; // p CSS 감추기
 
 resulrBtn.addEventListener('click',bFlower);
 function bFlower(){
-    //let flower = (++month.value);
-    result.style.display = 'block'; 
-    result.textContent= `${month.value}월의 탄생화는 ${birthday_flower[month.value-1].flower}, 꽃말은 ${birthday_flower[month.value-1].content}입니다. `
+    result.style.display = 'block';  // p CSS 보이기
+    /* result.textContent = `${month.value}월의 탄생화는 ${birthday_flower[month.value-1].flower}, 꽃말은 ${birthday_flower[month.value-1].content}입니다. ` */
+    if(month.value >= 1 && month.value <= 12){
+        result.textContent = `${month.value}월의 탄생화는 ${birthday_flower[month.value-1].flower}, 꽃말은 ${birthday_flower[month.value-1].content}입니다. `
+    }else if(month.value <= 1){
+        result.textContent =`1월보다 전의 달은 없어요ㅠㅠ 다시 입력해주세요`
+    }else if(month.value >= 12){
+        result.textContent =`12월까지만 입력해주세요ㅠㅠ`
+    }
 }
