@@ -1,0 +1,98 @@
+body, html {background-color: #f5f5f5;}
+main {
+    max-width: 1024px;
+    min-width: 320px;
+    margin: 0 auto;
+    border: 5px solid red;
+    padding: 20px 0;
+}
+main .back{float: left;}
+main .lang_group{
+    float: right;
+    position: relative;
+}
+main .lang_group #lang_select{}
+main .lang_group .lang_open{
+    position: absolute; width: max-content;
+    right: 0; 
+    border: 1px solid #ddd; background-color: #fff;
+    padding: 5px 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; flex-flow: column nowrap;
+    /* opacity: 0; */
+}
+main .lang_group .lang_open > * {margin-bottom: 8px;}
+main .lang_group .lang_open a {
+    font-size: 0.825rem; line-height: 2;
+}
+main .lang_group .lang_open .kr{}
+main .lang_group .lang_open .en{}
+main .lang_group .lang_open .ch1{}
+main .lang_group .lang_open .ch2{
+    margin-bottom: 0;
+}
+/* ============================ 네이버 로그인 영역 시작 */
+main .login_wrap{
+    clear:both;
+    max-width: 400px; margin: 0 auto;
+    border: 5px solid blue;
+    margin-top: 80px;
+    }
+main .login_wrap h1{
+    width: 135px; height: 26px;
+    background:yellow url(../images/m_sp.png) -315px -103px;
+    margin: 30px auto 60px;
+}
+main .login_wrap h1 a{width: 100%; height: 100%;display: block;}
+main .login_wrap h1 a .blind{display: none;}
+main .login_wrap .login_inner{}
+main .login_wrap .login_inner #login_frm{}
+main .login_wrap .login_inner #login_frm .id_pw_wrap{
+    border: 1px solid #eee;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+}
+main .login_wrap .login_inner #login_frm .id_pw_wrap input{
+    padding: 15px 10px;
+    color: #eee; font-size: 0.9rem;
+}
+main .login_wrap .login_inner #login_frm .id_pw_wrap input[name=user_id]{
+    border-bottom:1px solid #eee;
+}
+main .login_wrap .login_inner #login_frm .id_pw_wrap input[name=user_pw]{}
+main .login_wrap .login_inner #login_frm .error_msg{
+    font-size: 0.8rem; color: #f00;
+    padding: 10px 0; line-height: 1.4;
+}
+main .login_wrap .login_inner #login_frm #login_btn{
+    display: block; width: 100%;
+    padding: 15px 0; color: #fff;
+    background-color: #888;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+main .login_wrap .login_inner #login_frm .login_chk{}
+main .login_wrap .login_inner #login_frm .login_chk #chk_state{}
+main .login_wrap .login_inner #login_frm .login_chk label{}
+main .login_wrap .login_inner #login_frm .login_chk label span{}
+main .login_wrap .login_inner .search_join_wrap{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: relative; width: 100%;
+}
+main .login_wrap .login_inner .search_join_wrap a{
+    font-size: 0.9rem;
+    margin-right: 20px;
+}
+main .login_wrap .login_inner .search_join_wrap a::after{
+    content: ''; position: absolute; top: 0;
+    width: 1px; height: 90%;
+    background-color: #999; margin-left: 8px;
+}
+main .login_wrap .login_inner .search_join_wrap a:last-child::after{display: none;}
+main .login_wrap .login_inner .search_join_wrap a:nth-child(1){}/* 비번 */
+main .login_wrap .login_inner .search_join_wrap a:nth-child(2){}/* 아이디 */
+main .login_wrap .login_inner .search_join_wrap a:nth-child(3){color: #03c75a;}/* 회원가입 */
