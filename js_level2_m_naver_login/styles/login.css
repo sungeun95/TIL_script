@@ -55,7 +55,7 @@ main .login_wrap .login_inner #login_frm .id_pw_wrap{
 }
 main .login_wrap .login_inner #login_frm .id_pw_wrap input{
     padding: 15px 10px;
-    color: #eee; font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 main .login_wrap .login_inner #login_frm .id_pw_wrap input[name=user_id]{
     border-bottom:1px solid #eee;
@@ -89,8 +89,7 @@ main .login_wrap .login_inner .search_join_wrap a{
 }
 main .login_wrap .login_inner .search_join_wrap a::after{
     content: ''; position: absolute; top: 0;
-    width: 1px; height: 90%;
-    background-color: #999; margin-left: 8px;
+    width: 1px; height: 90%; margin-left: 8px;
 }
 main .login_wrap .login_inner .search_join_wrap a:last-child::after{display: none;}
 main .login_wrap .login_inner .search_join_wrap a:nth-child(1){}/* 비번 */
