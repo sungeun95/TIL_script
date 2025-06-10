@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon LEGENDS Z-A 발매예정일</title>
+    <link rel="stylesheet" href="../js_level1/styles/reset.css">
+    <style>
+        main {
+            width: 400px; height: 100vh;
+
+            background-image: url(https://i.pinimg.com/736x/89/7d/44/897d446973c3a72e9d2efbfcccf9db2e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 160px 0;
+        }
+        main h1{
+            color: #fff;
+            font-size: 1.4rem; font-weight: 800;
+            margin-bottom: 50px;
+        }
+        main span{
+            color: #f00;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 100px;
+        }
+        main input{display: block; margin: 0 auto;}
+        main input[name=pokemon_rd]{
+            color: #333;
+            padding: 5px 20px;
+            border-radius: 5px;
+            border: 2px solid #000;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 5px;
+        }
+        main button{
+            padding: 10px 40px;
+            background-color: #bbb;
+            color: #fff; font-size: 0.8rem;
+            border-radius: 5px;
+            transition:background-color 0.5s ;
+        }
+        main button:hover{background-color: #000;}
+        main .release_date{
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+        main .release_date p{
+            font-weight: 600;
+            
+        }
+        main .release_date p em{
+            color: #f00; font-weight: 600;
+            font-size: 1.2rem;
+        }
+        main .release_date .rd{
+            margin-bottom: 10px;
+        }
+        main .release_date .rd em{}
+        main .release_date .rdt{}
+        main .release_date .rdt em{}
+
+    </style>
+    <script src="./scripts/Marh_ex.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Pokémon LEGENDS Z-A 발매 예정일</h1>
+        <span>한국 정식 발매일 25년 10월 6일 ! </span>
+        <input type="date" id="pokemon_rd" name="pokemon_rd">
+        <button type="button" id="rd_btn">발매일 계산하기</button>
+        <div class="release_date">
+            <p class="rd">발매예정까지 남은 날짜 : <em></em>일</p>
+            <p class="rdt">발매예정까지 남은 시간 : <em></em>시간</p>
+        </div>
+    </main>
+</body>
+</html>
