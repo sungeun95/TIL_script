@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <link rel="stylesheet" href="../js_level1/styles/reset.css">
+    <style>
+        .slide_wrap{
+            width: 400px;
+            overflow: hidden;
+        }
+        .slide_wrap .slide_container{
+            display: flex;
+            flex-direction: row-reverse;
+            width: max-content;
+            transform: translateX(-0px);
+            /* 
+            0px = 400 * 0
+            400px = 400 * 1
+            800px = 400 * 2
+            */
+        }
+        .slide_wrap .slide_container .slide{
+            width: 400px; height: 300px; 
+            font-size: 10rem; text-align: center;
+            line-height: 250px;
+        }
+        .slide_wrap .slide_container .slide1{background: red;}
+        .slide_wrap .slide_container .slide2{background: orange;}
+        .slide_wrap .slide_container .slide3{background: yellow;}
+        .slide_wrap .slide_container .slide4{background: green;}
+        .slide_wrap .slide_container .slide5{background: blue;}
+        .slide_wrap .slide_container .slide6{background: navy;}
+        .slide_wrap .slide_container .slide7{background: purple;}
+    </style>
+    <script src="./scripts/timer2.js" defer></script>
+</head>
+<body>
+    <!-- 슬라이드 작성 규칙 -->
+    <!-- 슬라이드 전체 그룹 (개별슬라이드부모(개별슬라이드*다수)) -->
+    <div class="slide_wrap"><!-- 슬라이드 전체 그룹(보이는 영역) -->
+        <div class="slide_container"><!-- 개별슬라이드부모(이동) -->
+            <div class="slide slide1">1</div><!-- 개별슬라이드 -->
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+            <div class="slide slide4">4</div>
+            <div class="slide slide5">5</div>
+            <div class="slide slide6">6</div>
+            <div class="slide slide7">7</div>
+        </div>
+    </div>
+</body>
+</html>
