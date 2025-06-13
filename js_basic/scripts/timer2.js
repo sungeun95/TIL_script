@@ -1,9 +1,5 @@
 let num = 6; //0, 400, 800 출력을 위한 변수
 
-
-
-
-
 /* 
 setInterval(numTimer,2000);
 function numTimer(){
@@ -51,7 +47,7 @@ const slideTimer = setInterval(()=>{
 */
 const slideTimer = setInterval(()=>{
     num--;
-    if(num==0){num=6}
+    if(num<=0){num=6}
     slideContainer.style.transform = `translateX(-${400*num}px)`;
     console.log(`num : ${num} / x400 : ${400*num}`);
 },2000)
