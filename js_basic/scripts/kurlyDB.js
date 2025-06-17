@@ -1,20 +1,20 @@
 const kurlyDB = [
     {
-        src:'./imager/kurly_001.jpg',
+        src:'./images/kurly_001.jpg',
         name:'[해태] 여름 시즌 한정 트로피컬 에디션 간식 4종 (택1)',
         summary:'새콤달콤한 여름맛 간식',
         price:3580,
         sale:7,
         review:154,
     },{
-        src:'./imager/kurly_002.jpg',
+        src:'./images/kurly_002.jpg',
         name:'[피자로빈슨] 뉴욕 메가 슬라이스 피자 페퍼로니',
         summary:'짭쪼름한 페퍼로니가 듬뿍',
         price:5500,
         sale:20,
         review:18,
     },{
-        src:'./imager/kurly_003.jpg',
+        src:'./images/kurly_003.jpg',
         name:'[서울우유] 나100% 우유 1L',
         summary:'신선한 1등급 원유로 만든 우유',
         price:2500,
@@ -22,7 +22,7 @@ const kurlyDB = [
         review:320,
     },
     {
-        src:'./imager/kurly_004.jpg',
+        src:'./images/kurly_004.jpg',
         name:'[CJ] 햇반 210g*3입',
         summary:'전자레인지로 간편하게 즐기는 즉석밥',
         price:2980,
@@ -30,7 +30,7 @@ const kurlyDB = [
         review:210,
     },
     {
-        src:'./imager/kurly_005.jpg',
+        src:'./images/kurly_005.jpg',
         name:'[오뚜기] 진라면 매운맛 5입',
         summary:'얼큰하고 진한 국물의 국민 라면',
         price:3480,
@@ -38,7 +38,7 @@ const kurlyDB = [
         review:542,
     },
     {
-        src:'./imager/kurly_006.jpg',
+        src:'./images/kurly_006.jpg',
         name:'[빙그레] 바나나맛우유 240ml',
         summary:'부드러운 바나나 향의 국민 음료',
         price:1300,
@@ -46,7 +46,7 @@ const kurlyDB = [
         review:658,
     },
     {
-        src:'./imager/kurly_007.jpg',
+        src:'./images/kurly_007.jpg',
         name:'[동원] 참치캔 라이트스탠다드 100g*3입',
         summary:'각종 요리에 활용도 높은 참치',
         price:4980,
@@ -54,7 +54,7 @@ const kurlyDB = [
         review:189,
     },
     {
-        src:'./imager/kurly_008.jpg',
+        src:'./images/kurly_008.jpg',
         name:'[Pulmuone] 얇은피 꽉찬속 만두 420g',
         summary:'피는 얇고 속은 꽉 찬 만두의 정석',
         price:5980,
@@ -62,7 +62,7 @@ const kurlyDB = [
         review:276,
     },
     {
-        src:'./imager/kurly_009.jpg',
+        src:'./images/kurly_009.jpg',
         name:'[풀무원] 로스팅 그릴드 닭가슴살 100g',
         summary:'담백한 저칼로리 건강 간식',
         price:2980,
@@ -70,7 +70,7 @@ const kurlyDB = [
         review:94,
     },
     {
-        src:'./imager/kurly_010.jpg',
+        src:'./images/kurly_010.jpg',
         name:'[한성기업] 크래미 오리지널 180g',
         summary:'샐러드에 딱 좋은 맛살',
         price:3480,
@@ -78,7 +78,7 @@ const kurlyDB = [
         review:132,
     },
     {
-        src:'./imager/kurly_011.jpg',
+        src:'./images/kurly_011.jpg',
         name:'[매일유업] 상하목장 유기농 우유 900ml',
         summary:'아이들을 위한 안심 유기농 우유',
         price:4200,
@@ -86,7 +86,7 @@ const kurlyDB = [
         review:75,
     },
     {
-        src:'./imager/kurly_012.jpg',
+        src:'./images/kurly_012.jpg',
         name:'[노브랜드] 감자칩 오리지널 110g',
         summary:'가성비 좋은 바삭한 감자칩',
         price:1800,
