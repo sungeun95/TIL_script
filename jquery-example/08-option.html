@@ -29,6 +29,25 @@
     </div>
     <script>
         
+        const $colorSelect = $('#color');
+        const $selectP = $('.select');
+        const $closeB = $('.close');
+        console.log($selectP);
+        $selectP.hide();    //선택옵션 초기 숨기기
+
+        //select 태그의 옵션값이 변경되면 p태그에 변경된 옵션값 출력하기.
+        $colorSelect.change(function(){
+            //console.log('변경')
+            //현재(this)변경 대상의 자식, 자손(find)중 선택된(checked)옵션 값(val)을 찾아라
+            console.log($(this).find('option:checked').val())
+            //p의 자식 span안에 위 값을 출력하기
+            const optVal = $(this).find('option:checked').val()
+            $selectP.show();
+            $('.select').find('span').text(optVal)
+        })
+        $closeB.click(function(){
+            $(this).parent().hide();
+        })
     </script>
 </body>
 </html>
