@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>swiper-direction0</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        * {margin:0; padding:0; line-height:1.0; box-sizing:border-box;}
+        .swiper {width: 1240px; height: 350px;}
+        .swiper-slide {}
+        .swiper .swiper-slide .swiper-slide{}
+        .swiper .swiper-slide .swiper-slide img{width: 100%;}
+        .swiper .swiper-slide .slide1 {}
+        .swiper .swiper-slide .slide2 {}
+        .swiper .swiper-slide .slide3 {}
+        .swiper .swiper-slide .slide4 {}
+    </style>
+</head>
+<body>
+    <div class="swiper best">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"><img src="./images/bnr1.jpg" alt=""></div>
+            <div class="swiper-slide slide2"><img src="./images/bnr2.jpg" alt=""></div>
+            <div class="swiper-slide slide3"><img src="./images/bnr3.jpg" alt=""></div>
+            <div class="swiper-slide slide4"><img src="./images/bnr4.jpg" alt=""></div>
+        </div>
+    </div>
+    <script>
+        //기본 : 마우스드래그로만 움직이는 기본 슬라이드
+        //const bestSwiper = new Swiper('.best');
+
+        //활용 bestSwiper('대상',{ 옵션:값, 옵션:값, 옵션:값, })
+        const bestSwiper = new Swiper('.best',{
+            //옵션:값,
+            autoplay:{delay:1000},
+            loop:true,
+            direction:'vertical', //아래에서 위로 올라오게 horizontal, vertical
+        })
+        /*
+        var mySwiper = new Swiper('.swiper',{
+            //옵션:'값'
+            direction:'horizontal',
+            autoplay:{
+                delay:1000, //1초(설정 안할 시 기본3초)
+                disableOnInteraction:false //true일 경우 마우스가 올라가면 재생 일시정지
+            },
+            loop:true //true설정 시 3->1 로 자연스럽게 넘어감. (기본값 false)
+        })
+        */
+    </script>
+</body>
+</html>
+
+
+
+
+
+

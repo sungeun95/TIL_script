@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>swiper-direction1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        * {margin:0; padding:0; line-height:1.0; box-sizing:border-box;}
+        #produst{
+            /*overflow: hidden;  이미지를 정사각형 비율로 만든다면 안넣어도 된다. */
+            margin:30px auto;
+            width:400px; 
+            height:400px;
+        }
+        #produst .swiper-wrapper{}
+        #produst .swiper-wrapper .swiper-slide {}
+        #produst .swiper-wrapper .swiper-slide img{
+            height: 100%; width: 100%; /* 부모에 강제로 맞추기, 대신 이미지 깨짐 */
+            /* transform: translateX();
+            position: relative; */
+        }
+        #produst .swiper-wrapper .slide1 {}
+        #produst .swiper-wrapper .slide2 {}
+        #produst .swiper-wrapper .slide3 {}
+        #produst .swiper-wrapper .slide4 {}
+    </style>
+</head>
+<body>
+    <div class="swiper" id="produst">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"><img src="./images/bnr1.jpg"></div>
+            <div class="swiper-slide slide2"><img src="./images/bnr2.jpg"></div>
+            <div class="swiper-slide slide3"><img src="./images/bnr3.jpg"></div>
+            <div class="swiper-slide slide4"><img src="./images/bnr4.jpg"></div>
+        </div>
+    </div>
+    <script>
+        const produstS = new Swiper('#produst',{
+            effect:'cube',
+            loop:true,
+            cubeEffect:{
+                shadow:true, //그림자 보이기 (true), 숨기기(false)
+                shadowOffset:50, //그림자 y위치 (기본값 20)
+                shadowScale:0.5, //그림자 크기(기본값 1)
+            },
+            autoplay:{delay:2000,},
+        });
+        /*
+        var mySwiper = new Swiper('.swiper-container',{
+            effect:'cube',
+            cubeEffect:{ //큐브 이펙트 추가
+                shadow:true, //기본 true (cube 하단 그림자)
+                shadowOffset:0, //기본 20 (하단 그림자 위치)
+                shadowScale:1.5, //기본 1 (하단 그림자 크기)
+                slideShadows:true,//기본 true (다음 cube 그림자 유무)
+            },
+            grabCursor:true, //true 설정 시 마우스 올리면 손 아이콘 변경
+            autoplay:{
+                delay:1000, //1초(설정 안할 시 기본3초)
+                disableOnInteraction:false //true일 경우 마우스가 올라가면 재생 일시정지
+            },
+            loop:true //true설정 시 3->1 로 자연스럽게 넘어감. (기본값 false)
+        })
+        */
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
